@@ -25,6 +25,9 @@ setup(
     url="https://github.com/AustralianSynchrotron/cruet",
     packages=find_packages(),
     install_requires=[
+        "Flask>=1.0.3",
+        "wrapt>=1.11.1",
+        "marshmallow>=3.0.0rc6"
     ],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
