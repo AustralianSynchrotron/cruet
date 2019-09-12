@@ -5,7 +5,7 @@ from typing import Dict, List
 
 
 class ApiError(HTTPException):
-    def __init__(self, message: str, status: int = 500, *, extra: Dict = None, headers: List = None):
+    def __init__(self, message: str, status: int = 500, *, extra: Dict = None, headers: List = None) -> None:
         """ If used with flask-restful, the data field is being returned"""
         self._headers = headers
 
